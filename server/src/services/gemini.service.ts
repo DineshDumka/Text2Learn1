@@ -35,10 +35,9 @@ if (
 
 // Initialize Gemini AI
 const genAI = new GoogleGenerativeAI(GEMINI_API_KEY);
-// Using gemini-2.0-flash-exp: Only model available for your API key
-// NOTE: This has 50 requests/day limit. Generate new API key or enable Gemini 1.5 models for 1500/day
+// Using gemini-2.5-flash: This model is confirmed to be available and working for your API key.
 const model = genAI.getGenerativeModel({
-  model: "gemini-2.0-flash-exp",
+  model: "gemini-2.5-flash",
   generationConfig: {
     temperature: 0.7,
     topK: 40,
