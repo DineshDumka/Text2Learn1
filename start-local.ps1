@@ -126,4 +126,4 @@ Start-Process "http://localhost:5173"
 
 Write-Host ""
 Write-Host "Press any key to close this window..."
-$null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
+# $null = $Host.UI.RawUI.ReadKey("NoEcho,IncludeKeyDown")
